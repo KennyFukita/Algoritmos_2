@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Criar um vetor que armazena o preço de 5 produtos, atualizar o preço em 10%.*/
+/*Criar um vetor que armazena o preÃ§o de 5 produtos, atualizar o preÃ§o em 10%.*/
 
 int main(){
 	int x;
 	float vet[5], vetdesc[5];
 		
-	for(x=1; x<=5; x++){
-		printf("Informe o %d valor do vetor: ", x);
+	for(x=0; x<5; x++){
+		printf("Informe o %d valor do vetor: ", x+1);
 		scanf("%f",&vet[x]);
-		printf("%f",&vet[x]);
 	}
 	
-	for(x=1; x<=5; x++){
-		vetdesc[x] = vet[x]*0.10;
-		printf("Valor ajustado com 10 por cento de desconto: %f\n",vetdesc[x]);
+	for(x=0; x<5; x++){
+		vetdesc[x] = vet[x]*1.10;
+		printf("Valor ajustado aumentado em 10 por cento: %.2f\n",vetdesc[x]);
 	}
 
 system("pause");	
