@@ -11,7 +11,7 @@ int main() {
     
     while (ret != 0){
         printf("Informe uma palavra: ");
-        scanf("%s",word);
+        gets(word);
         ret = strcmp(word,word2);
         if(ret==0){
             break;
