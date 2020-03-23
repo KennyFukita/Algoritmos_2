@@ -15,7 +15,8 @@ int main() {
     
     for (x=0; x<10; x++){
         printf("Informe o nome do %d aluno(a): ",x+1);
-        scanf("%s",&alunos[x].nome);
+        fflush(stdin);
+        gets(alunos[x].nome);
         printf("Informe a nota do 1 bimestre: ");
         scanf("%f",&alunos[x].notas[0]);
         printf("Informe a nota do 2 bimestre: ");
