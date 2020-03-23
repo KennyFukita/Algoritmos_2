@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* FaÁa  um  programa  em  C que  leia  o  nome  e  as  quatro  notas  bimestrais  para  um conjunto de 10 alunos. 
-Depois de preenchida a estrutura o algoritmo dever· exibir uma listagem  dos  nomes  dos  alunos  seguidos  da  informaÁ„o  aprovado  ou  reprovado. 
-Considere que os alunos que obtiveram mÈdia inferior a 6,0 est„o reprovados.*/
+/* Fa√ßa  um  programa  em  C que  leia  o  nome  e  as  quatro  notas  bimestrais  para  um conjunto de 10 alunos. 
+Depois de preenchida a estrutura o algoritmo dever√° exibir uma listagem  dos  nomes  dos  alunos  seguidos  da  informa√ß√£o  aprovado  ou  reprovado. 
+Considere que os alunos que obtiveram m√©dia inferior a 6,0 est√£o reprovados.*/
 
 int main() {
     int x;
@@ -15,7 +15,8 @@ int main() {
     
     for (x=0; x<10; x++){
         printf("Informe o nome do %d aluno(a): ",x+1);
-        scanf("%s",alunos[x].nome);
+        fflush(stdin);
+        gets(alunos[x].nome);
         printf("Informe a nota do 1 bimestre: ");
         scanf("%f",&alunos[x].notas[0]);
         printf("Informe a nota do 2 bimestre: ");
